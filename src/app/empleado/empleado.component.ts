@@ -7,5 +7,5 @@ import {Component} from '@angular/core';
 
 
 export class EmpleadoComponent {
-	public title = 'Empleado';
+	public title = 'Componente Empleado';
 }
