@@ -11,7 +11,8 @@ export class EmpleadoComponent {
 	public title = 'Componente Empleado';
 	public empleado:Empleado;
 	public trabajadores:Array<Empleado>;
-	public tabajador_externo:boolean;
+	public trabajador_externo:boolean;
+	public color:string;
 
 	constructor() {
 		this.empleado = new Empleado('Antonio', 45, 'Cocinero', true);
@@ -22,6 +23,7 @@ export class EmpleadoComponent {
 		];
 
 		this.trabajador_externo = true;
+		this.color = 'green';
 	}
 
 	cambiarExterno(valor) {
