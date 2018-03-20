@@ -13,6 +13,7 @@ export class EmpleadoComponent {
 	public trabajadores:Array<Empleado>;
 	public trabajador_externo:boolean;
 	public color:string;
+	public color_seleccionado:string;
 
 	constructor() {
 		this.empleado = new Empleado('Antonio', 45, 'Cocinero', true);
@@ -24,9 +25,14 @@ export class EmpleadoComponent {
 
 		this.trabajador_externo = true;
 		this.color = 'green';
+		this.color_seleccionado = "#ccc";
 	}
 
 	cambiarExterno(valor) {
 		this.trabajador_externo = valor;
+	}
+
+	logColorSeleccionado() {
+		console.log(this.color_seleccionado);
 	}
 }

@@ -1,5 +1,18 @@
 <h3 style="color:blue">{{title}}</h3>
 
+<hr/>
+<h3>Selector de colores</h3>
+
+<button (click)="logColorSeleccionado()">Mostrar log</button>
+<input type="text" [(ngModel)]="color_seleccionado"/>
+<pre>
+	{{color_seleccionado}}
+</pre>
+<div [ngStyle]="{'background':color_seleccionado, 'width': '200px', 'height': '200px', 'float': 'right', 'margin-right': '69%'}"></div>
+
+<div style='clear:both'></div>
+
+<hr/>
 <strong>Empleado estrella:</strong>
 <br/>
 <br/>
